@@ -34,3 +34,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     directory_to_csv(args.directory, args.csv_name)
+
+
