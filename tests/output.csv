@@ -1,0 +1,155 @@
+parent path,filename,filesize
+C:\Users\TEU_USER\Documents,better_functions.odt,16719
+C:\Users\TEU_USER\Documents,better_functions.pdf,25446
+C:\Users\TEU_USER\Documents,learn-python3-the-hard-way-nov-15-2018.pdf,1358028
+C:\Users\TEU_USER\Documents,string_formatting.odt,14633
+C:\Users\TEU_USER\Documents,string_formatting.pdf,26488
+C:\Users\TEU_USER\Documents,variable_naming.odt,14287
+C:\Users\TEU_USER\Documents,variable_naming.pdf,26904
+C:\Users\TEU_USER\Documents\Python\Machine Problems,cat.py,448
+C:\Users\TEU_USER\Documents\Python\Machine Problems,cat2.py,2472
+C:\Users\TEU_USER\Documents\Python\Machine Problems,createthis.txt,16
+C:\Users\TEU_USER\Documents\Python\Machine Problems,demo.txt,16
+C:\Users\TEU_USER\Documents\Python\Machine Problems,Pipfile,138
+C:\Users\TEU_USER\Documents\Python\Machine Problems,Pipfile.lock,453
+C:\Users\TEU_USER\Documents\Python\Machine Problems,README.md,532
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,COMMIT_EDITMSG,17
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,config,239
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,description,73
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,FETCH_HEAD,123
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,HEAD,31
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,index,209
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,ORIG_HEAD,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,applypatch-msg.sample,478
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,commit-msg.sample,896
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,fsmonitor-watchman.sample,3327
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,post-update.sample,189
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,pre-applypatch.sample,424
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,pre-commit.sample,1638
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,pre-push.sample,1348
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,pre-rebase.sample,4898
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,pre-receive.sample,544
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,prepare-commit-msg.sample,1492
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,update.sample,3610
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,exclude,240
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git,HEAD,1805
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\logs\refs,master,190
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\logs\refs,refactored-cat,1172
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\logs\refs\remotes,master,166
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\logs\refs\remotes,refactored-cat,162
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,ca488d2af7fb588e4bd76bd46530dd6867541a,265
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,7fb75c660aac8c3d519ca292497b52a9f63c48,418
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,6db90214efb53ccb4433b5d7d134d1b7a24eb3,323
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,f25ee9b936d98adb72f12bc34ac085c58503dc,148
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,e98358d2b98643ff7978283cdc02a44a8528de,691
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,f37e3117765ab7da358d81ca17c01e66a69112,533
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,a48c31b6669ac64c214b8249959444f6293e95,178
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,e636219944facf20dec82bbf7e28f0ea484281,52
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,ffc31e5891b0302b8d88186021948c9d900592,691
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,0802ef448ff824f96c0620d124e212a325108a,682
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,2acf8cf898a8297a977aa9a2d7ce9f77aa134e,85
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,cbdec6d8398e66286c3b1c28a4f0ead787a47f,52
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,f37e02557de8fd47df30e087170a44c5114585,85
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,967e793466d9102acbaf3d742ada53072afd6c,168
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,a58cb6906e00d4c2fcf55e91de2d736c3d4c79,85
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,8a1cae5436a8e3b95e873d94d1e66b1ac150d5,186
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,811ab0f86757e5987da25b8b334bc2dc7e52da,683
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,bb5cc811ebb6b02bbfa62a83340f68c6e80b0e,687
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,0f8eb6ba4f74ef906792b059cf6694ddb88476,52
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,e6f221ef481c94212885a346aab191a52d7b12,85
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\objects,1571ffa3f1b18bdb3808e307fc396bed3c673c,564
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\refs,master,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\refs,refactored-cat,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\refs\remotes,master,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.git\refs\remotes,refactored-cat,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,.gitignore,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,cat.iml,443
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,misc.xml,190
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,modules.xml,265
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,vcs.xml,185
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat,workspace.xml,3651
+C:\Users\TEU_USER\Documents\Python\Machine Problems\cat\.idea,profiles_settings.xml,174
+C:\Users\TEU_USER\Documents\Python\Machine Problems,.gitignore,1307
+C:\Users\TEU_USER\Documents\Python\Machine Problems,listdir.py,1279
+C:\Users\TEU_USER\Documents\Python\Machine Problems,output.csv,0
+C:\Users\TEU_USER\Documents\Python\Machine Problems,Pipfile,138
+C:\Users\TEU_USER\Documents\Python\Machine Problems,Pipfile.lock,453
+C:\Users\TEU_USER\Documents\Python\Machine Problems,README.md,470
+C:\Users\TEU_USER\Documents\Python\Machine Problems,requirements.txt,30
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,COMMIT_EDITMSG,58
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,config,231
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,description,73
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,FETCH_HEAD,106
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,HEAD,23
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,index,529
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,ORIG_HEAD,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,applypatch-msg.sample,478
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,commit-msg.sample,896
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,fsmonitor-watchman.sample,3327
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,post-update.sample,189
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,pre-applypatch.sample,424
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,pre-commit.sample,1638
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,pre-push.sample,1348
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,pre-rebase.sample,4898
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,pre-receive.sample,544
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,prepare-commit-msg.sample,1492
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,update.sample,3610
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,exclude,240
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git,HEAD,2123
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\logs\refs,master,985
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\logs\refs\remotes,master,846
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\logs\refs\remotes,project-structure,162
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,d9769ca259f9fff19321ac5e87286fc73a1db7,577
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,5ce2da2d6447d11dfe32bfb846c3d5b199fc99,142
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,c5120ac8a30792bd1ed6dec57a72ab864922c5,171
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,f2dc5fa95ef368c3f09eaca24f75cb45102d3e,20
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,56252ae4a4c008d71a78bea960f348f0138c40,55
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,ef0d0fd94d53edb180ede7eacc5656f2f8c460,118
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,1c2137c16821db53c3fc9be6946f9f659da375,156
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,1907347573ccc9e0c694ab6a08a82d723c70ae,288
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,bd1ddee94931b3b53e7e8b0050bdb3519aed91,222
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,c1cd736a08a3b8b08a0f10ce999ceeb9f6c572,175
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,0265ebcc213fae5d31ee2dfcdb372ce77017ed,156
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,c8a0d3bb7c827e06c539395cb92d557fa69f86,532
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,e993d1a07a8e359ffc6cfd58168602b970097d,562
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,879cddddd87e686f687f5585145f8bfac2d4b6,180
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,f3cf228a5dc385ec9663ab4001c6c0ed79d45d,49
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,11606311e2664bd835f92b5c114681d2e284f5,261
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,4136864a029fa8aadadb7f32bc58161ec2f83d,186
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,d3f8ffc1a4d4496ef78b6cfb7067c02892199b,194
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,f1054ae70acd79df495f9b9d2a8dfad7bf28ee,227
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,4a44cc066a027465cd26d634948d56d13af9af,695
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,ca3093242848c6b5d1ebbc9dd19413bca3c3c4,87
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,a25f7f4cb416c083d265558da75d457237d671,155
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,51a2828edd3a7e27683080cd171f006e129a6f,251
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,424179eb1af288c73d1c0daefe9e94fa706bdd,555
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,0d7f359601ebd80ab95ca04ed4befa403a236f,566
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,23d0199f863e1cf0f17acf5cc359de7e927048,126
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,c622f706d723fa2d48f1d39861d49fc313f548,55
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,e9d11d4bf243bffe4bb60b4ac1f9392297f4bf,55
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,e54663eadd4de3b6fd488ec6069fb84ce6952a,566
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,edb7661fd935e8d7ca06094891b3339081ed61,169
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\objects,9f532d3b204ac2d739df92857a019b13a6ac7b,143
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\refs,master,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\refs\remotes,master,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.git\refs\remotes,project-structure,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,.gitignore,41
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,listdir.iml,599
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,misc.xml,198
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,modules.xml,273
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,vcs.xml,185
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir,workspace.xml,2825
+C:\Users\TEU_USER\Documents\Python\Machine Problems\listdir\.idea,profiles_settings.xml,174
+C:\Users\TEU_USER\Documents\Python,anagram.py,627
+C:\Users\TEU_USER\Documents\Python,dictionary_debug.py,1290
+C:\Users\TEU_USER\Documents\Python,palindrome.py,614
+C:\Users\TEU_USER\Documents\Python,remove_char.py,604
+C:\Users\TEU_USER\Documents\Python,something.csv,1612295
+C:\Users\TEU_USER\Documents\Python,something1.csv,3968001
+C:\Users\TEU_USER\Documents\Python,some_file.txt,2322
+C:\Users\TEU_USER\Documents\Python,try_lang.py,245
+C:\Users\TEU_USER\Documents\Python\Training,misc.xml,199
+C:\Users\TEU_USER\Documents\Python\Training,modules.xml,275
+C:\Users\TEU_USER\Documents\Python\Training,Training.iml,408
+C:\Users\TEU_USER\Documents\Python\Training,workspace.xml,1466
+C:\Users\TEU_USER\Documents\Python\Training\.idea,profiles_settings.xml,174
