@@ -3,6 +3,7 @@ import csv
 import argparse
 import hashlib
 import zipfile
+import configparser
 
 
 def zip_output(filename):
@@ -55,9 +56,18 @@ def directory_to_csv(desired_path, desired_filename):
 
 
 if __name__ == '__main__':
+
+    config = configparser.ConfigParser()
+    config.read("conf.ini")
+
     parser = argparse.ArgumentParser()
-    parser.add_argument("directory")
-    parser.add_argument("csv_name")
+    parser.add_argument("directory", nargs='?')
+    parser.add_argument("csv_name", nargs='?')
     args = parser.parse_args()
 
-    directory_to_csv(args.directory, args.csv_name)
+    if args.directory and args.csv_name:
+        directory_to_csv(args.directory, args.csv_name)
+    else:
+        directory_to_csv(config['args']['directory'], config['args']['filename'])
+
+    # print(config.sections())
