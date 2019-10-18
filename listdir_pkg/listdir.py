@@ -81,10 +81,11 @@ def directory_to_csv(desired_path, desired_filename):
         print("Path not found")
 
 
-if __name__ == '__main__':
+def main():
 
     config = configparser.ConfigParser()
-    config.read("conf.ini")
+    conf_dir = os.path.dirname(__file__)
+    config.read(conf_dir + "/conf.ini")
     directory = config['args']['directory']
     filename = config['args']['filename']
 
@@ -98,4 +99,6 @@ if __name__ == '__main__':
     else:
         directory_to_csv(directory, filename)
 
-    # print(config.sections())
+
+if __name__ == '__main__':
+    main()
