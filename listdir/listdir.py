@@ -108,18 +108,14 @@ def directory_to_csv(desired_path, desired_filename, is_json):
         is_json : checks if the output will be json or a csv
     """
     if os.path.exists(desired_path):
-        if is_json:
-            desired_filename = add_datetime(desired_filename+".txt", '%Y%m%d_%H-%M-%S')
-        else:
-            desired_filename = add_datetime(desired_filename+".csv", '%Y%m%d_%H-%M-%S')
-
         try:
-
             if is_json:
+                desired_filename = add_datetime(desired_filename + ".txt", '%Y%m%d_%H-%M-%S')
                 with open(desired_filename, 'w+') as jsonfile:
                     json.dump(find_files(desired_path), jsonfile, indent=2)
                 zip_output(desired_filename)
             else:
+                desired_filename = add_datetime(desired_filename + ".csv", '%Y%m%d_%H-%M-%S')
                 with open(desired_filename, 'w+', newline='') as csvfile:
                     fieldnames_csv = ['parent path', 'filename', 'filesize', 'md5', 'sha1']
                     writer = csv.DictWriter(csvfile, fieldnames=fieldnames_csv)
