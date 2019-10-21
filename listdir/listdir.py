@@ -7,6 +7,7 @@ import configparser
 import datetime
 import logging.config
 import yaml
+import json
 
 
 def setup_logging(
@@ -77,36 +78,59 @@ def add_datetime(file_name, time_format):
     return str_date + "_" + file_name
 
 
-def directory_to_csv(desired_path, desired_filename):
+def create_json(dict, desired_filename):
+    os.remove(desired_filename)
+    with open(desired_filename, 'w+') as jsonfile:
+        json.dumps(dict, jsonfile, indent=2)
+    zip_output(desired_filename)
+
+
+def find_files(desired_path):
+    dict = []
+    for root, directories, files in os.walk(desired_path):
+
+        for file in files:
+            file_path = "{}{}{}".format(root, os.sep, file)
+
+            file_dict = {"parent path": os.path.dirname(root), "filename": file,
+                         "filesize": os.path.getsize(file_path), "md5": get_hash(file_path, "md5"),
+                         "sha1": get_hash(file_path, "sha1")}
+            dict.append(file_dict)
+    return dict
+
+
+def directory_to_csv(desired_path, desired_filename, is_json):
     """Accepts a desired path and a desired filename,
     then use the directory to recursively collect data then print in a csv file.
     Args:
         desired_path : the directory to be processed
         desired_filename : the filename of the csv to be created
+        is_json : checks if the output will be json or a csv
     """
     if os.path.exists(desired_path):
-        desired_filename = add_datetime(desired_filename, '%Y%m%d_%H-%M-%S')
+        if is_json:
+            desired_filename = add_datetime(desired_filename+".txt", '%Y%m%d_%H-%M-%S')
+        else:
+            desired_filename = add_datetime(desired_filename+".csv", '%Y%m%d_%H-%M-%S')
+
         try:
-            with open(desired_filename, 'w+', newline='') as csvfile:
-                fieldnames_csv = ['parent path', 'filename', 'filesize', 'md5', 'sha1']
-                writer = csv.DictWriter(csvfile, fieldnames=fieldnames_csv)
-                writer.writeheader()
 
-                for root, directories, files in os.walk(desired_path):
+            if is_json:
+                with open(desired_filename, 'w+') as jsonfile:
+                    json.dump(find_files(desired_path), jsonfile, indent=2)
+                zip_output(desired_filename)
+            else:
+                with open(desired_filename, 'w+', newline='') as csvfile:
+                    fieldnames_csv = ['parent path', 'filename', 'filesize', 'md5', 'sha1']
+                    writer = csv.DictWriter(csvfile, fieldnames=fieldnames_csv)
+                    writer.writeheader()
 
-                    for file in files:
-                        file_path = "{}{}{}".format(root, os.sep, file)
-
-                        file_dict = {"parent path": os.path.dirname(root), "filename": file,
-                                 "filesize": os.path.getsize(file_path), "md5": get_hash(file_path, "md5"),
-                                 "sha1": get_hash(file_path, "sha1")}
-
-                        writer.writerow(file_dict)
-
-            zip_output(desired_filename)
+                    for lines in find_files(desired_path):
+                        writer.writerow(lines)
+                zip_output(desired_filename)
 
         except Exception as e:
-            logger.error('Error: ' + str(e))
+            logger.error('Error: ' + str(e),exc_info=True)
     else:
         print("Path not found")
 
@@ -122,9 +146,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("directory", nargs='?', default=directory)
     parser.add_argument("csv_name", nargs='?', default=filename)
+    parser.add_argument("-j", "--json", action="store_true")
     args = parser.parse_args()
 
-    directory_to_csv(os.path.abspath(args.directory), args.csv_name)
+    directory_to_csv(os.path.abspath(args.directory), args.csv_name, args.json)
 
 
 if __name__ == '__main__':
