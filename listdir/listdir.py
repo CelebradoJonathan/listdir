@@ -9,7 +9,8 @@ import logging.config
 import yaml
 import json
 import psycopg2
-import getpass
+import getpass #for hiding password
+import pika #for rabbitmq
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 
@@ -25,9 +26,8 @@ def create_db(db_password, hostname, username):
         connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
 
         cursor = connection.cursor()
-        find_db_query = "SELECT datname FROM pg_catalog.pg_database WHERE datname = 'postgres'"
+        find_db_query = "SELECT datname FROM pg_catalog.pg_database WHERE datname = 'postgres';"
         cursor.execute(find_db_query)
-
         if cursor.fetchone():
             pass
         else:
@@ -35,7 +35,7 @@ def create_db(db_password, hostname, username):
 
             cursor.execute(create_table_query)
             connection.commit()
-
+        # return connection
     except (Exception, psycopg2.Error) as error:
         logger.error('Error while connecting to PostgreSQL: ' + str(error), exc_info=True)
     finally:
@@ -60,8 +60,6 @@ def create_table(db_password, hostname, username):
         connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
 
         cursor = connection.cursor()
-
-        # create_db(db_password, hostname, username)
 
         cursor.execute("select * from information_schema.tables where table_name=%s", ('listdir',))
         print(bool(cursor.rowcount))
@@ -196,6 +194,8 @@ def create_insert(desired_path, db_password, hostname, username):
     :param username: the username needed for db configuration
     """
     try:
+        create_db(db_password, hostname, username)
+        create_table(db_password, hostname, username)
         connection = psycopg2.connect(user=username,
                                       password=db_password,
                                       host=hostname,
@@ -205,9 +205,6 @@ def create_insert(desired_path, db_password, hostname, username):
         connection.autocommit = True
         connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
 
-        create_db(db_password, hostname, username)
-        create_table(db_password, hostname, username)
-
         cursor = connection.cursor()
         insert_query = "INSERT INTO listdir(ParentPath, FileName, Size, MD5, sha1)" \
                        " VALUES(%(parent_path)s,%(filename)s,%(filesize)s,%(md5)s,%(sha1)s)"
@@ -215,12 +212,12 @@ def create_insert(desired_path, db_password, hostname, username):
         connection.commit()
     except (Exception, psycopg2.Error) as error:
         logger.error('Error while connecting to PostgreSQL: ' + str(error), exc_info=True)
-    # finally:
-    #     # closing database connection.
-    #     if (connection):
-    #         cursor.close()
-    #         connection.close()
-    #         logger.info("PostgreSQL connection is closed")
+    finally:
+        # closing database connection.
+        if (connection):
+            cursor.close()
+            connection.close()
+            logger.info("PostgreSQL connection is closed")
 
 
 def create_json(desired_path, desired_filename):
@@ -232,6 +229,17 @@ def create_json(desired_path, desired_filename):
     with open(desired_filename, 'w+') as jsonfile:
         json.dump(find_files(desired_path), jsonfile, indent=2)
     zip_output(desired_filename)
+
+
+def send_metadata(desired_path):
+    connection = pika.BlockingConnection(
+        pika.ConnectionParameters('localhost'))
+    channel = connection.channel()
+    channel.queue_declare(queue='listdir')
+
+    for file in find_files(desired_path):
+        channel.basic_publish(exchange='', routing_key='listdir', body=json.dumps(file))
+    connection.close()
 
 
 def main():
@@ -248,6 +256,7 @@ def main():
     parser.add_argument("csv_name", nargs='?', default=filename, help="the desired file name")
     parser.add_argument("-j", "--json", action="store_true", help="option to make the output a json")
     parser.add_argument("-c", "--csv", action="store_true", help="option to make the output a csv")
+    parser.add_argument("-s", "--send", action="store_true", help="option to make the output a csv")
     parser.add_argument("-q", "--query", action=PwdAction, nargs=0, help="option to make the output"
                                                                          " save in the database")
 
@@ -261,6 +270,8 @@ def main():
                 create_insert(os.path.abspath(args.directory), args.query, hostname, username)
             elif args.csv:
                 create_csv(os.path.abspath(args.directory), args.csv_name)
+            elif args.send:
+                send_metadata(os.path.abspath(args.directory))
         except Exception as e:
             logger.error('Error: ' + str(e), exc_info=True)
     else:

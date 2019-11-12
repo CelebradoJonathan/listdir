@@ -11,7 +11,7 @@ def create_db(db_password, hostname, username):
                                       password=db_password,
                                       host=hostname,
                                       port="5432",
-                                      database="listdirDB")
+                                      database="postgres")
 
         cursor = connection.cursor()
         find_db_query = "SELECT datname FROM pg_catalog.pg_database WHERE datname = 'listdirDB'"
@@ -20,7 +20,7 @@ def create_db(db_password, hostname, username):
         if bool(cursor.rowcount):
             pass
         else:
-            create_table_query = "CREATE DATABASE listdirDB;"
+            create_table_query = "CREATE DATABASE postgres;"
 
             cursor.execute(create_table_query)
             connection.commit()
@@ -42,7 +42,7 @@ def create_table(db_password, hostname, username):
                                       password=db_password,
                                       host=hostname,
                                       port="5432",
-                                      database="listdirDB")
+                                      database="postgres")
 
         cursor = connection.cursor()
 
